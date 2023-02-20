@@ -6,7 +6,92 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: hsl(224deg, 30%, 27%);
+  background-color: hsl(221deg, 100%, 96%);
+}
+
+.card {
+  max-width: 320px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 25px;
+  text-align: center;
+}
+.card__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 40px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(252deg, 100%, 67%)), to(hsl(241deg, 81%, 54%)));
+  background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+  border-radius: 25px;
+  color: hsl(241deg, 100%, 89%);
+}
+.card__score-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(256deg, 72%, 46%)), to(hsla(241deg, 72%, 46%, 0)));
+  background-image: linear-gradient(hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+  color: hsl(0deg, 0%, 100%);
+}
+.card__score {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.card__max-score {
+  font-size: 1.4rem;
+  color: hsla(0deg, 0%, 100%, 0.5);
+}
+.card__result-text {
+  color: hsl(0deg, 0%, 100%);
+}
+.card__result-info {
+  margin: 10px 0;
+  font-size: 1.4rem;
+}
+
 .attribution {
+  margin-top: 20px;
   font-size: 11px;
   text-align: center;
 }

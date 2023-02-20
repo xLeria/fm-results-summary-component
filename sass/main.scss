@@ -1,13 +1,82 @@
+@use './variables' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
+html {
+	font-size: 62.5%;
+  }
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: $body-font;
+	font-weight: $body-font-weight;
+	font-size: 1.8rem;
+	color: $dark-gray-blue;
+	background-color: $pale-blue;
+}
+
+.card{
+	max-width: 320px;
+	background-color: $white;
+	border-radius: 25px;
+	text-align: center;
+
+	&__result{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px 40px;
+		background-image: $background-gradient;
+		border-radius: 25px;
+		color: $light-lavender;
+	}
+
+
+	&__score-box{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 20px 0;
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		background-image: $circle-gradient;
+		color: $white;
+	}
+
+	&__score{
+		font-size: 5rem;
+		font-weight: 600;
+	}
+	
+	&__max-score{
+		font-size: 1.4rem;
+		color: hsla(0, 0%, 100%,50%);
+	}
+
+	&__result-text{
+		color: $white;
+	}
+
+	&__result-info{
+		margin: 10px 0;
+		font-size: 1.4rem;
+	}
+}
 
 .attribution {
+	margin-top: 20px;
 	font-size: 11px;
 	text-align: center;
 

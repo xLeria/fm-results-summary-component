@@ -124,19 +124,19 @@ body {
 }
 .card__stat:nth-child(1) {
   color: hsl(0deg, 100%, 67%);
-  background-color: hsla(0deg, 100%, 67%, 0.05);
+  background-color: rgba(255, 87, 87, 0.05);
 }
 .card__stat:nth-child(2) {
   color: hsl(39deg, 100%, 56%);
-  background-color: hsla(39deg, 100%, 56%, 0.05);
+  background-color: rgba(255, 176, 31, 0.05);
 }
 .card__stat:nth-child(3) {
   color: hsl(166deg, 100%, 37%);
-  background-color: hsla(166deg, 100%, 37%, 0.05);
+  background-color: rgba(0, 189, 145, 0.05);
 }
 .card__stat:nth-child(4) {
   color: hsl(234deg, 85%, 45%);
-  background-color: hsla(234deg, 85%, 45%, 0.05);
+  background-color: rgba(17, 37, 212, 0.05);
 }
 .card__stat-name {
   display: -webkit-box;

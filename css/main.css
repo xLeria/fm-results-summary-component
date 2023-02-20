@@ -76,7 +76,7 @@ body {
 }
 .card__score {
   font-size: 5rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 .card__max-score {
   font-size: 1.4rem;
@@ -84,10 +84,79 @@ body {
 }
 .card__result-text {
   color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .card__result-info {
   margin: 10px 0;
   font-size: 1.4rem;
+}
+.card__summary {
+  padding: 24px;
+}
+.card__summary-title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.card__stats-box {
+  padding: 10px 0;
+}
+.card__stat {
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.card__stat-number {
+  color: hsla(224deg, 30%, 27%, 0.5);
+}
+.card__stat-number span {
+  color: hsl(224deg, 30%, 27%);
+}
+.card__stat:nth-child(1) {
+  color: hsl(0deg, 100%, 67%);
+  background-color: hsla(0deg, 100%, 67%, 0.05);
+}
+.card__stat:nth-child(2) {
+  color: hsl(39deg, 100%, 56%);
+  background-color: hsla(39deg, 100%, 56%, 0.05);
+}
+.card__stat:nth-child(3) {
+  color: hsl(166deg, 100%, 37%);
+  background-color: hsla(166deg, 100%, 37%, 0.05);
+}
+.card__stat:nth-child(4) {
+  color: hsl(234deg, 85%, 45%);
+  background-color: hsla(234deg, 85%, 45%, 0.05);
+}
+.card__stat-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.card__summary-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background-color: hsl(224deg, 30%, 27%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.card__summary-btn:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(252deg, 100%, 67%)), to(hsl(241deg, 81%, 54%)));
+  background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
 }
 
 .attribution {

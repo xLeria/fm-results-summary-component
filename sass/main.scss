@@ -57,7 +57,7 @@ body {
 
 	&__score{
 		font-size: 5rem;
-		font-weight: 600;
+		font-weight: 800;
 	}
 	
 	&__max-score{
@@ -67,11 +67,83 @@ body {
 
 	&__result-text{
 		color: $white;
+		font-weight: 600;
+		letter-spacing: 1px;
 	}
 
 	&__result-info{
 		margin: 10px 0;
 		font-size: 1.4rem;
+	}
+
+	&__summary{
+		padding: 24px;
+	}
+
+	&__summary-title{
+		text-align: left;
+		font-weight: 700;
+		font-size: 1.6rem;
+	}
+
+	&__stats-box{
+		padding: 10px 0;
+	}
+
+	&__stat{
+		margin: 10px 0;
+		padding: 12px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.4rem;
+		font-weight: 600;
+		border-radius: 10px;
+	}
+
+	&__stat-number{
+		color: hsl(224, 30%, 27%, 50%);
+
+		span{
+			color: $dark-gray-blue;
+		}
+	}
+
+	&__stat:nth-child(1){
+		color: $red;
+		background-color: hsla(0, 100%, 67%, 5%);
+	}
+	&__stat:nth-child(2){
+		color: $yellow;
+		background-color: hsla(39, 100%, 56%, 5%);
+	}
+	&__stat:nth-child(3){
+		color: $green;
+		background-color: hsla(166, 100%, 37%, 5%);
+	}
+	&__stat:nth-child(4){
+		color: $blue;
+		background-color: hsla(234, 85%, 45%, 5%);
+	}
+
+	&__stat-name{
+		display: flex;
+		gap: 10px;
+	}
+
+	&__summary-btn{
+		width: 100%;
+		padding: 14px;
+		border: none;
+		background-color: $dark-gray-blue;
+		color: $white;
+		border-radius: 20px;
+		font-weight: 600;
+		cursor: pointer;
+
+		&:hover{
+			background-image: $background-gradient;
+		}
 	}
 }
 

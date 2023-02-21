@@ -152,9 +152,6 @@ body {
   display: flex;
   gap: 10px;
 }
-.card .card__stat:hover .card__stat-title {
-  letter-spacing: 8px;
-}
 .card__stat-title {
   -webkit-transition: letter-spacing 0.3s;
   transition: letter-spacing 0.3s;
@@ -227,5 +224,8 @@ body {
   }
   .card__stat {
     font-size: 1.8rem;
+  }
+  .card .card__stat:hover .card__stat-title {
+    letter-spacing: 8px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -133,10 +133,6 @@ body {
 		gap: 10px;
 	}
 
-	.card__stat:hover .card__stat-title{
-		letter-spacing: 8px;
-	}
-
 	&__stat-title{
 		transition: letter-spacing .3s;
 	}
@@ -221,6 +217,10 @@ body {
 	
 		&__stat {
 			font-size: 1.8rem;
+		}
+
+		.card__stat:hover .card__stat-title{
+			letter-spacing: 8px;
 		}
 		
 	}

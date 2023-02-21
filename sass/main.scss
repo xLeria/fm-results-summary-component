@@ -17,7 +17,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 	font-family: $body-font;
 	font-weight: $body-font-weight;
 	font-size: 1.8rem;
@@ -173,6 +172,11 @@ body {
 
 
 @media (min-width: 768px){
+
+	body{
+		height: 100vh;
+	}
+
 	.card{
 		max-width: 720px;
 		flex-direction: row;

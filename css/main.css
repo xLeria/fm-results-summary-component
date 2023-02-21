@@ -115,6 +115,7 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 10px;
+  cursor: pointer;
 }
 .card__stat-number {
   color: hsla(224deg, 30%, 27%, 0.5);
@@ -143,6 +144,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+.card .card__stat:hover .card__stat-title {
+  letter-spacing: 10px;
+}
+.card__stat-title {
+  -webkit-transition: letter-spacing 0.3s;
+  transition: letter-spacing 0.3s;
 }
 .card__summary-btn {
   width: 100%;

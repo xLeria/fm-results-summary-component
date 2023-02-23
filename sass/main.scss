@@ -1,7 +1,5 @@
 @use './variables' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -25,6 +23,7 @@ body {
 }
 
 .card {
+	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 	max-width: 376px;
@@ -99,7 +98,6 @@ body {
 		font-size: 1.6rem;
 		font-weight: 600;
 		border-radius: 10px;
-		cursor: pointer;
 
 	}
 
@@ -133,9 +131,6 @@ body {
 		gap: 10px;
 	}
 
-	&__stat-title{
-		transition: letter-spacing .3s;
-	}
 
 	&__summary-btn {
 		width: 100%;
@@ -170,7 +165,7 @@ body {
 @media (min-width: 768px){
 
 	body{
-		height: 100vh;
+		min-height: 100vh;
 	}
 
 	.card{
@@ -217,10 +212,6 @@ body {
 	
 		&__stat {
 			font-size: 1.8rem;
-		}
-
-		.card__stat:hover .card__stat-title{
-			letter-spacing: 8px;
 		}
 		
 	}

@@ -31,7 +31,7 @@ body {
 }
 
 .card {
-  margin-top: 30px;
+  margin-top: 2.7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,7 +72,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px 0;
+  margin: 1.1em 0;
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -95,11 +95,11 @@ body {
   letter-spacing: 1px;
 }
 .card__result-info {
-  margin: 10px 0;
+  margin: 0.5em 0;
   font-size: 1.4rem;
 }
 .card__summary {
-  padding: 30px;
+  padding: 1.6em;
 }
 .card__summary-title {
   text-align: left;
@@ -107,11 +107,11 @@ body {
   font-size: 1.8rem;
 }
 .card__stats-box {
-  padding: 10px 0;
+  padding: 0.5em 0;
 }
 .card__stat {
-  margin: 16px 0;
-  padding: 16px;
+  margin: 0.888em 0;
+  padding: 0.888em;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,11 +149,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 0.5em;
 }
 .card__summary-btn {
   width: 100%;
-  padding: 20px;
+  padding: 1.1em;
   border: none;
   background-color: hsl(224deg, 30%, 27%);
   color: hsl(0deg, 0%, 100%);
@@ -169,7 +169,7 @@ body {
 }
 
 .attribution {
-  margin-top: 20px;
+  margin-top: 1.1em;
   font-size: 11px;
   text-align: center;
 }
@@ -192,13 +192,13 @@ body {
     width: 50%;
   }
   .card__result {
-    padding: 42px 50px;
+    padding: 2.33em 2.7em;
   }
   .card__result-title, .card__summary-title {
     font-size: 2.4rem;
   }
   .card__score-box {
-    margin: 35px 0;
+    margin: 1.94em 0;
     width: 200px;
     height: 200px;
   }
@@ -215,7 +215,7 @@ body {
     font-size: 1.8rem;
   }
   .card__summary {
-    padding: 40px;
+    padding: 2.22em;
   }
   .card__stat {
     font-size: 1.8rem;

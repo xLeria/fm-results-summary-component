@@ -31,7 +31,7 @@ body {
 }
 
 .card {
-  margin-top: 2.7em;
+  margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +44,7 @@ body {
   border-radius: 25px;
   text-align: center;
 }
-.card__result {
+.card .card-result {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +61,7 @@ body {
   border-radius: 30px;
   color: hsl(241deg, 100%, 89%);
 }
-.card__score-box {
+.card .card-result__score-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,36 +80,36 @@ body {
   background-image: linear-gradient(hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
   color: hsl(0deg, 0%, 100%);
 }
-.card__score {
+.card .card-result__score {
   font-size: 5rem;
   font-weight: 800;
 }
-.card__max-score {
+.card .card-result__max-score {
   font-size: 1.4rem;
   color: hsla(0deg, 0%, 100%, 0.5);
 }
-.card__result-text {
+.card .card-result__text {
   font-size: 2.2rem;
   color: hsl(0deg, 0%, 100%);
   font-weight: 600;
   letter-spacing: 1px;
 }
-.card__result-info {
+.card .card-result__info {
   margin: 0.5em 0;
   font-size: 1.4rem;
 }
-.card__summary {
+.card .card-summary {
   padding: 1.6em;
 }
-.card__summary-title {
+.card .card-summary__title {
   text-align: left;
   font-weight: 700;
   font-size: 1.8rem;
 }
-.card__stats-box {
+.card .card-summary__stats-box {
   padding: 0.5em 0;
 }
-.card__stat {
+.card .card-summary__stat {
   margin: 0.888em 0;
   padding: 0.888em;
   width: 100%;
@@ -123,35 +123,35 @@ body {
   font-weight: 600;
   border-radius: 10px;
 }
-.card__stat-number {
+.card .card-summary__stat-number {
   color: hsla(224deg, 30%, 27%, 0.5);
 }
-.card__stat-number span {
+.card .card-summary__stat-number span {
   color: hsl(224deg, 30%, 27%);
 }
-.card__stat:nth-child(1) {
+.card .card-summary__stat:nth-child(1) {
   color: hsl(0deg, 100%, 67%);
   background-color: rgba(255, 87, 87, 0.05);
 }
-.card__stat:nth-child(2) {
+.card .card-summary__stat:nth-child(2) {
   color: hsl(39deg, 100%, 56%);
   background-color: rgba(255, 176, 31, 0.05);
 }
-.card__stat:nth-child(3) {
+.card .card-summary__stat:nth-child(3) {
   color: hsl(166deg, 100%, 37%);
   background-color: rgba(0, 189, 145, 0.05);
 }
-.card__stat:nth-child(4) {
+.card .card-summary__stat:nth-child(4) {
   color: hsl(234deg, 85%, 45%);
   background-color: rgba(17, 37, 212, 0.05);
 }
-.card__stat-name {
+.card .card-summary__stat-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0.5em;
 }
-.card__summary-btn {
+.card .card-summary__btn {
   width: 100%;
   padding: 1.1em;
   border: none;
@@ -163,13 +163,13 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
 }
-.card__summary-btn:hover {
+.card .card-summary__btn:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(252deg, 100%, 67%)), to(hsl(241deg, 81%, 54%)));
   background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
 }
 
 .attribution {
-  margin-top: 1.1em;
+  margin-top: 2.3em;
   font-size: 11px;
   text-align: center;
 }
@@ -188,36 +188,36 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .card__result, .card__summary {
+  .card .card-result, .card .card-summary {
     width: 50%;
   }
-  .card__result {
+  .card .card-result {
     padding: 2.33em 2.7em;
   }
-  .card__result-title, .card__summary-title {
-    font-size: 2.4rem;
-  }
-  .card__score-box {
+  .card .card-result__score-box {
     margin: 1.94em 0;
     width: 200px;
     height: 200px;
   }
-  .card__score {
+  .card .card-result__score {
     font-size: 7.2rem;
   }
-  .card__max-score {
+  .card .card-result__max-score {
     font-size: 1.6rem;
   }
-  .card__result-text {
+  .card .card-result__text {
     font-size: 2.2rem;
   }
-  .card__result-info {
+  .card .card-result__info {
     font-size: 1.8rem;
   }
-  .card__summary {
+  .card .card-result__title, .card .card-summary__title {
+    font-size: 2.4rem;
+  }
+  .card .card-summary {
     padding: 2.22em;
   }
-  .card__stat {
+  .card .card-summary__stat {
     font-size: 1.8rem;
   }
 }/*# sourceMappingURL=main.css.map */

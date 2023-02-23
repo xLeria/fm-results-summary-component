@@ -23,7 +23,7 @@ body {
 }
 
 .card {
-	margin-top: 2.7em;
+	margin-top: 1em;
 	display: flex;
 	flex-direction: column;
 	max-width: 376px;
@@ -31,7 +31,7 @@ body {
 	border-radius: 25px;
 	text-align: center;
 
-	&__result {
+	.card-result {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -39,120 +39,122 @@ body {
 		background-image: $background-gradient;
 		border-radius: 30px;
 		color: $light-lavender;
-	}
 
-	&__score-box {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin: 1.1em 0;
-		width: 140px;
-		height: 140px;
-		border-radius: 50%;
-		background-image: $circle-gradient;
-		color: $white;
+		&__score-box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 1.1em 0;
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+			background-image: $circle-gradient;
+			color: $white;
+		}
+	
+		&__score {
+			font-size: 5rem;
+			font-weight: 800;
+		}
+	
+		&__max-score {
+			font-size: 1.4rem;
+			color: hsla(0, 0%, 100%, 50%);
+		}
+		&__text {
+			font-size: 2.2rem;
+			color: $white;
+			font-weight: 600;
+			letter-spacing: 1px;
+		}
+	
+		&__info {
+			margin: 0.5em 0;
+			font-size: 1.4rem;
+		}
 	}
-
-	&__score {
-		font-size: 5rem;
-		font-weight: 800;
-	}
-
-	&__max-score {
-		font-size: 1.4rem;
-		color: hsla(0, 0%, 100%, 50%);
-	}
-
-	&__result-text {
-		font-size: 2.2rem;
-		color: $white;
-		font-weight: 600;
-		letter-spacing: 1px;
-	}
-
-	&__result-info {
-		margin: 0.5em 0;
-		font-size: 1.4rem;
-	}
-
-	&__summary {
+	.card-summary {
 		padding: 1.6em;
-	}
 
-	&__summary-title {
-		text-align: left;
-		font-weight: 700;
-		font-size: 1.8rem;
-	}
-
-	&__stats-box {
-		padding: 0.5em 0;
-	}
-
-	&__stat {
-		margin: 0.888em 0;
-		padding: 0.888em;
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		font-size: 1.6rem;
-		font-weight: 600;
-		border-radius: 10px;
-
-	}
-
-	&__stat-number {
-		color: hsl(224, 30%, 27%, 50%);
-
-		span {
-			color: $dark-gray-blue;
+		&__title {
+			text-align: left;
+			font-weight: 700;
+			font-size: 1.8rem;
+		}
+	
+		&__stats-box {
+			padding: 0.5em 0;
+		}
+	
+		&__stat {
+			margin: 0.888em 0;
+			padding: 0.888em;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			font-size: 1.6rem;
+			font-weight: 600;
+			border-radius: 10px;
+	
+		}
+	
+		&__stat-number {
+			color: hsl(224, 30%, 27%, 50%);
+	
+			span {
+				color: $dark-gray-blue;
+			}
+		}
+	
+		&__stat:nth-child(1) {
+			color: $red;
+			background-color: $red-background;
+		}
+		&__stat:nth-child(2) {
+			color: $yellow;
+			background-color: $yellow-background;
+		}
+		&__stat:nth-child(3) {
+			color: $green;
+			background-color: $green-background;
+		}
+		&__stat:nth-child(4) {
+			color: $blue;
+			background-color: $blue-background;
+		}
+	
+		&__stat-name {
+			display: flex;
+			gap: 0.5em;
+		}
+	
+	
+		&__btn {
+			width: 100%;
+			padding: 1.1em;
+			border: none;
+			background-color: $dark-gray-blue;
+			color: $white;
+			border-radius: 50px;
+			font-weight: 600;
+			font-size: 1.6rem;
+			letter-spacing: 1px;
+			cursor: pointer;
+			
+			&:hover {
+				background-image: $background-gradient;
+			}
+	
 		}
 	}
 
-	&__stat:nth-child(1) {
-		color: $red;
-		background-color: $red-background;
-	}
-	&__stat:nth-child(2) {
-		color: $yellow;
-		background-color: $yellow-background;
-	}
-	&__stat:nth-child(3) {
-		color: $green;
-		background-color: $green-background;
-	}
-	&__stat:nth-child(4) {
-		color: $blue;
-		background-color: $blue-background;
-	}
-
-	&__stat-name {
-		display: flex;
-		gap: 0.5em;
-	}
 
 
-	&__summary-btn {
-		width: 100%;
-		padding: 1.1em;
-		border: none;
-		background-color: $dark-gray-blue;
-		color: $white;
-		border-radius: 50px;
-		font-weight: 600;
-		font-size: 1.6rem;
-		letter-spacing: 1px;
-		cursor: pointer;
-		
-		&:hover {
-			background-image: $background-gradient;
-		}
 
-	}
 }
 
 .attribution {
-	margin-top: 1.1em;
+	margin-top: 2.3em;
 	font-size: 11px;
 	text-align: center;
 
@@ -172,47 +174,49 @@ body {
 		max-width: 720px;
 		flex-direction: row;
 
-		&__result, &__summary{
+		.card-result, .card-summary{
 			width: 50%;
 		}
 
-		&__result{
+		.card-result{
 			padding: 2.33em 2.7em;
+
+			&__score-box {
+				margin: 1.94em 0;
+				width: 200px;
+				height: 200px;
+			}
+		
+			&__score {
+				font-size: 7.2rem;
+			}
+		
+			&__max-score {
+				font-size: 1.6rem;
+			}
+
+			&__text {
+				font-size: 2.2rem;
+			}
+		
+			&__info {
+				font-size: 1.8rem;
+			}
 		}
 
-		&__result-title, &__summary-title{
+		.card-result__title, .card-summary__title{
 			font-size: 2.4rem;
 		}
 	
-		&__score-box {
-			margin: 1.94em 0;
-			width: 200px;
-			height: 200px;
-		}
 	
-		&__score {
-			font-size: 7.2rem;
-		}
-	
-		&__max-score {
-			font-size: 1.6rem;
-		}
-	
-		&__result-text {
-			font-size: 2.2rem;
-		}
-	
-		&__result-info {
-			font-size: 1.8rem;
-		}
-
-		&__summary {
+		.card-summary {
 			padding: 2.22em;
+
+			&__stat {
+				font-size: 1.8rem;
+			}
 		}
 	
-		&__stat {
-			font-size: 1.8rem;
-		}
 		
 	}
 }

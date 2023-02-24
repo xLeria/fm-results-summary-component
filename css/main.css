@@ -55,7 +55,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px 60px;
+  padding: 1.4em 3.3em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(252deg, 100%, 67%)), to(hsl(241deg, 81%, 54%)));
   background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
   border-radius: 30px;
